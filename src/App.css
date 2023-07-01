@@ -1,0 +1,91 @@
+/* **************************** Import Google Fonts **************************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* **************************** Site General Settings **************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: var(--darkwhite);
+  font-family: "Poppins", sans-serif;
+}
+
+/* **************************** Color Variables **************************** */
+
+:root {
+  /* --darkblack: #212529;
+  --lightblack: #4c4d4d;
+
+  --darkwhite: #ffffff;
+  --lightwhite: #f8f9fa;
+
+  --darkgrey: #6c757d;
+
+  --lightyellow: #f5df4e;
+
+  --btnBg: #343a40;
+  --btnBgHover: #23272b; */
+
+  --darkblue: #05386b;
+  --lightblue: #0b549e;
+
+  --darkgreen: #5cdb95;
+  --lightgreen: #8ee4af;
+
+  --darkwhite: #edf5e1;
+}
+
+/* **************************** Scroll Bar **************************** */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+}
+
+/* **************************** Selection **************************** */
+
+::selection {
+  color: var(--darkgreen);
+  background: var(--darkwhite);
+}
+
+/* **************************** User Select None **************************** */
+
+img,
+.noselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+button.btn:active,
+button.btn:focus,
+a.btn:active,
+a.btn:focus {
+  box-shadow: none;
+}

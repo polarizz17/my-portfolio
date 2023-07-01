@@ -1,0 +1,233 @@
+/* **************************** Navbar Styles **************************** */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 1rem 10rem;
+  background: var(--darkgreen);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+header.scrolled {
+  background: var(--darkblue);
+}
+
+/* **************************** Header Logo **************************** */
+
+header a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+header a img {
+  margin: auto 0.2rem;
+  width: 3.5rem;
+  height: auto;
+}
+
+header.scrolled a img {
+  filter: invert(1);
+}
+
+header a h2 {
+  margin: auto 0.2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--darkblue);
+}
+
+header.scrolled a h2 {
+  color: var(--darkwhite);
+}
+
+/* **************************** Header Navbar **************************** */
+
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+header nav.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ================= Nav Links ================= */
+header nav div.nav_menu {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-10%);
+  transition: all 0.3s ease;
+}
+
+header nav.active div.nav_menu {
+  transform: translateY(0%);
+}
+
+header nav div.nav_menu a.btn {
+  margin: 0.5rem auto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--darkwhite);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+header nav div.nav_menu a.btn:hover,
+header nav div.nav_menu a.btn.active {
+  color: var(--darkgreen);
+}
+
+/* ================= Social Links ================= */
+header nav div.social_link {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+header nav.active div.social_link {
+  transform: scaleX(1);
+}
+
+header nav div.social_link a.btn {
+  margin: 0.5rem;
+  font-size: 3rem;
+  color: var(--darkwhite);
+  transition: all 0.3s ease;
+}
+
+header nav div.social_link a.btn:hover {
+  color: var(--darkgreen);
+  transform: scale(1.2);
+}
+
+/* **************************** Header Menu **************************** */
+
+header div.menu_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* ================== Menu Open ================== */
+header div.menu_btn span.box {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--darkblue);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+header.scrolled div.menu_btn span.box {
+  background: var(--darkwhite);
+}
+
+header div.menu_btn span.box-1 {
+  top: 0.6rem;
+  left: 0.6rem;
+}
+
+header div.menu_btn span.box-2 {
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+header div.menu_btn span.box-3 {
+  bottom: 0.6rem;
+  left: 0.6rem;
+}
+
+header div.menu_btn span.box-4 {
+  bottom: 0.6rem;
+  right: 0.6rem;
+}
+
+header div.menu_btn.active span.box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: var(--darkwhite);
+}
+
+/* ================== Menu Close ================== */
+header div.menu_btn span.cross {
+  position: absolute;
+  width: 3.6rem;
+  height: 0.4rem;
+  background: var(--darkblue);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+header.scrolled div.menu_btn span.cross {
+  background: var(--darkwhite);
+}
+
+header div.menu_btn span.cross-1 {
+  transform: rotate(45deg) scaleX(0);
+}
+
+header div.menu_btn span.cross-2 {
+  transform: rotate(-45deg) scaleX(0);
+}
+
+header div.menu_btn.active span.cross {
+  background: var(--darkwhite);
+}
+
+header div.menu_btn.active span.cross-1 {
+  transform: rotate(45deg) scaleX(1);
+}
+
+header div.menu_btn.active span.cross-2 {
+  transform: rotate(-45deg) scaleX(1);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 992px) {
+  header {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+/* **************************** Styles End **************************** */

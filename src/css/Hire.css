@@ -1,0 +1,73 @@
+/* **************************** Hire Comp Styles **************************** */
+
+section#hire {
+  margin: 5rem auto;
+  padding: 20rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+section#hire div.hire {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+section#hire div.hire h2 {
+  margin: 1rem auto;
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--darkwhite);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+section#hire div.hire button.btn {
+  margin: 1rem auto;
+  padding: 1.3rem 3.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--darkblue);
+  background: var(--darkgreen);
+  border-radius: 0;
+}
+
+section#hire div.hire button.btn:hover {
+  color: var(--darkgreen);
+  background: var(--darkblue);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 768px) {
+  section#hire {
+    margin: auto;
+    padding: 15rem;
+  }
+
+  section#hire div.hire {
+    padding: 1rem 2rem;
+  }
+  section#hire div.hire h2 {
+    font-size: 3.2rem;
+  }
+  section#hire div.hire button.btn {
+    padding: 1rem 3.2rem;
+  }
+}
+
+/* **************************** Styles End **************************** */

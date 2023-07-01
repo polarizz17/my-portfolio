@@ -1,0 +1,185 @@
+/* **************************** Biodata Comp Styles **************************** */
+
+section#biodata {
+  margin: 6rem auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#biodata div.biodata {
+  position: relative;
+  padding: 4rem 8rem;
+}
+
+/* =================== Biodata Head =================== */
+
+section#biodata div.biodata .biodata_head {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#biodata div.biodata .biodata_head span {
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  background: var(--lightgreen);
+  text-align: center;
+}
+
+section#biodata div.biodata .biodata_head h1 {
+  margin: 0.5rem auto;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  text-align: center;
+}
+
+/* =================== Biodata Content =================== */
+
+section#biodata div.biodata .biodata_timeline {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#biodata div.biodata .biodata_timeline h2 {
+  margin: 3rem 0 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--darkblue);
+}
+
+section#biodata div.biodata .biodata_timeline .biodata_sub {
+  margin: 4rem auto;
+  padding: 0 2rem;
+  border-left: 3px solid var(--darkgreen);
+}
+
+/* =================== Biodata Card =================== */
+
+div.biodata_timeline div.biodata_sub .bio_card h4 {
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--darkblue);
+}
+
+div.biodata_timeline div.biodata_sub .bio_card span {
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--darkblue);
+}
+
+div.biodata_timeline div.biodata_sub .bio_card p {
+  margin: 1rem auto 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--lightblue);
+  line-height: 1.8;
+  word-spacing: -2px;
+}
+
+div.biodata_timeline div.biodata_sub .bio_card hr {
+  margin: 3rem 0;
+  width: 100%;
+  height: 0.5px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* =================== Biodata Skills & Tools =================== */
+
+section#biodata div.biodata .biodata_skills,
+section#biodata div.biodata .biodata_tools {
+  position: relative;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#biodata div.biodata .biodata_skills h2,
+section#biodata div.biodata .biodata_tools h2 {
+  margin: 2rem auto;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  border-bottom: 4px solid var(--darkgreen);
+}
+
+section#biodata div.biodata .biodata_tools button.btn {
+  margin: 2rem auto;
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--darkblue);
+  background: var(--darkwhit);
+  border: 3px solid var(--darkblue);
+  transition: all 0.4s ease;
+}
+
+section#biodata div.biodata .biodata_tools button.btn:hover {
+  color: var(--darkwhite);
+  background: var(--darkblue);
+}
+section#biodata div.biodata .biodata_skills .skills_wrapper,
+section#biodata div.biodata .biodata_tools .tools_wrapper {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#biodata div.biodata .skills_wrapper .skill,
+section#biodata div.biodata .tools_wrapper .tool {
+  margin: 2rem;
+  padding: 0.8rem 2.3rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+section#biodata div.biodata .skills_wrapper .skill:hover,
+section#biodata div.biodata .tools_wrapper .tool:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+section#biodata div.biodata .skills_wrapper .skill span,
+section#biodata div.biodata .tools_wrapper .tool span {
+  font-size: 7rem;
+  color: var(--darkblue);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 1240px) {
+  section#biodata div.biodata {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section#biodata div.biodata .biodata_head h1 {
+    font-size: 3.5rem;
+  }
+
+  section#biodata div.biodata .biodata_skills h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* **************************** Styles End **************************** */

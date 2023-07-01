@@ -1,0 +1,166 @@
+/* **************************** Home Comp Styles **************************** */
+
+section#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkgreen);
+  overflow-x: hidden;
+}
+
+section#home div.home {
+  position: relative;
+  padding: 4rem 8rem;
+}
+
+section#home div.home .biodata,
+section#home div.home .bioimg {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+section#home div.home h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--darkwhite);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+section#home div.home h2 {
+  font-size: 9rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+section#home div.home h3 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--darkwhite);
+  line-height: 0.3;
+}
+
+section#home div.home h3 span {
+  margin-right: 10px;
+}
+
+section#home div.home p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  line-height: 3;
+}
+
+section#home div.home span {
+  margin: 2rem 0;
+}
+
+section#home div.home span .btn {
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+section#home div.home span .btn:nth-child(1) {
+  color: var(--darkwhite);
+  background: var(--darkblue);
+  border: 2px solid var(--darkblue);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+section#home div.home span .btn:nth-child(1):hover {
+  background: var(--darkwhite);
+  color: var(--darkblue);
+  border: 2px solid var(--darkwhite);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+section#home div.home span .btn:nth-child(2) {
+  margin-left: 2rem;
+  background: var(--darkgreen);
+  color: var(--darkblue);
+  border: 2px solid var(--darkblue);
+  transition: all 0.4s ease;
+}
+
+section#home div.home span .btn:nth-child(2):hover {
+  background: var(--darkblue);
+  color: var(--darkgreen);
+}
+
+section#home div.home img {
+  border-radius: 50%;
+  /* border: 1.5rem solid var(--lightwhite); */
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 1240px) {
+  section#home div.home {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section#home {
+    height: 100%;
+    padding: 10rem 2rem 2rem;
+  }
+
+  section#home div.home .bioimg {
+    align-items: center;
+  }
+
+  section#home div.home img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  section#home div.home h1 {
+    font-size: 4rem;
+  }
+  section#home div.home h2 {
+    font-size: 7rem;
+  }
+  section#home div.home p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 472px) {
+  section#home div.home p {
+    line-height: 2;
+  }
+  section#home div.home span .btn {
+    padding: 1.2rem 2rem;
+  }
+  section#home div.home img {
+    width: 80%;
+    /* border: 1rem solid var(--lightwhite); */
+  }
+}
+
+@media (max-width: 366px) {
+  section#home div.home h1 {
+    font-size: 3.5rem;
+  }
+  section#home div.home h2 {
+    font-size: 6rem;
+  }
+}
+
+/* **************************** Styles End **************************** */

@@ -1,0 +1,134 @@
+/* **************************** About Comp Styles **************************** */
+
+section#about {
+  margin: 5rem auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#about div.about {
+  position: relative;
+  padding: 4rem 6rem;
+}
+
+/* =================== About Head =================== */
+
+section#about div.about .about_head {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#about div.about .about_head span {
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  background: var(--lightgreen);
+  text-align: center;
+}
+
+section#about div.about .about_head h1 {
+  margin: 0.5rem auto;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  text-align: center;
+}
+
+/* =================== About Content =================== */
+
+section#about div.about .about_content {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+section#about div.about .about_content h2 {
+  margin: 0.5rem auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--darkblue);
+}
+
+section#about div.about .about_content h2 span {
+  position: relative;
+  font-weight: 600;
+  margin-left: 10px;
+  border-bottom: 4px solid var(--lightgreen);
+}
+
+section#about div.about .about_content p {
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  line-height: 1.8;
+}
+
+/* =================== About Footer =================== */
+
+section#about div.about .about_footer {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section#about div.about .about_footer span {
+  margin: auto;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--lightblue);
+}
+
+section#about div.about .about_footer p {
+  margin: auto;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--darkblue);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 1240px) {
+  section#about div.about {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section#about div.about .about_head h1 {
+    font-size: 3.5rem;
+  }
+
+  section#about div.about .about_content h2 {
+    font-size: 3rem;
+  }
+  section#about div.about .about_content p {
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  section#about div.about .about_content .exp h4 {
+    font-size: 10rem;
+  }
+  section#about div.about .about_content .exp h4::after {
+    width: 5rem;
+    height: 5rem;
+  }
+  section#about div.about .about_content .exp h6 {
+    font-size: 2.5rem;
+  }
+}
+
+/* **************************** Styles End **************************** */

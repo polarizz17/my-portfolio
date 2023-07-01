@@ -1,0 +1,153 @@
+/* **************************** Work Comp Styles **************************** */
+
+section#work {
+  margin: 8rem auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+section#work div.work {
+  position: relative;
+  padding: 4rem 10rem;
+}
+
+/* =================== Work Head =================== */
+
+section#work div.work .work_head {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#work div.work .work_head span {
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  background: var(--lightgreen);
+  text-align: center;
+}
+
+section#work div.work .work_head h1 {
+  margin: 0.5rem auto;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  text-align: center;
+}
+
+/* =================== Work Exp container =================== */
+
+section#work div.work_exp {
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =================== Work Cards =================== */
+
+section#work div.work .work_content {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#work div.work .work_content .work_card {
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+section#work div.work .work_content .work_card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#work div.work .work_content .work_card span {
+  margin: auto;
+  font-size: 8rem;
+  color: var(--darkgreen);
+  text-align: center;
+}
+
+section#work div.work .work_content .work_card h2 {
+  margin: 1.2rem auto 1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  text-align: center;
+}
+
+/* =================== Exp Cards =================== */
+
+section#work div.work .exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#work div.work .exp h4 {
+  position: relative;
+  margin: auto;
+  font-size: 15rem;
+  font-weight: 500;
+  color: var(--darkblue);
+}
+
+section#work div.work .exp h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: var(--lightgreen);
+  z-index: -1;
+}
+
+section#work div.work .exp h6 {
+  margin: 1rem auto;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--darkblue);
+}
+
+section#work div.work .exp h6 span {
+  font-weight: 700;
+}
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 1240px) {
+  section#work div.work {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section#work div.work .work_head h1 {
+    font-size: 3.5rem;
+  }
+
+  section#work div.work .work_content .work_card span {
+    font-size: 6rem;
+  }
+}
+
+/* **************************** Styles Head **************************** */

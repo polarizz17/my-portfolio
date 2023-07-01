@@ -1,0 +1,173 @@
+/* **************************** Conatct Comp Styles **************************** */
+
+section#contact {
+  margin: 5rem auto 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkgreen);
+}
+
+section#contact div.contact {
+  position: relative;
+  padding: 8rem 10rem;
+}
+
+/* =================== Contact Content =================== */
+
+section#contact div.contact .content {
+  position: relative;
+  padding-left: 5rem;
+}
+
+section#contact div.contact .content h2 {
+  margin: 1rem 0;
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  letter-spacing: 0.5px;
+}
+
+section#contact div.contact .content p {
+  margin: 4rem 0;
+  padding-right: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  line-height: 1.5;
+}
+
+section#contact div.contact .content h4 {
+  margin: 4rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+section#contact div.contact .content h4 span {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+section#contact div.contact .content ul {
+  margin: 5rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+
+section#contact div.contact .content ul a {
+  margin-right: 2rem;
+  font-size: 3rem;
+  color: var(--lightblue);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+section#contact div.contact .content ul a:hover {
+  color: var(--darkblue);
+  transform: scale(1.15);
+}
+
+/* =================== Contact Form =================== */
+
+section#contact div.contact .form {
+  position: relative;
+  padding-left: 10rem;
+}
+
+section#contact div.contact .form h2 {
+  margin: 1rem 0;
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--darkblue);
+  letter-spacing: 0.5px;
+}
+
+section#contact div.contact form .form-group {
+  margin: 3rem 0;
+}
+
+section#contact div.contact form label {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--darkblue);
+}
+
+section#contact div.contact form input,
+section#contact div.contact form textarea {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--darkblue);
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+section#contact div.contact form input:focus,
+section#contact div.contact form textarea:focus {
+  box-shadow: none;
+  border-bottom: 2.5px solid var(--darkblue);
+}
+
+section#contact div.contact form button.btn-submit {
+  margin: auto;
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--darkwhite);
+  background: var(--darkblue);
+  box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+section#contact div.contact form button.btn-submit:hover {
+  background: var(--darkwhite);
+  color: var(--darkblue);
+}
+
+/* **************************** Responsive Medias **************************** */
+
+@media (max-width: 1240px) {
+  section#contact div.contact {
+    padding: 8rem 2rem;
+  }
+
+  section#contact div.contact .content h2,
+  section#contact div.contact .form h2 {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section#contact div.contact .content,
+  section#contact div.contact .form {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  section#contact div.contact .content p,
+  section#contact div.contact .content h4 {
+    margin: 2rem 0;
+  }
+  section#contact div.contact .content ul {
+    margin: 3rem 0;
+  }
+}
+
+/* **************************** Styles End **************************** */
